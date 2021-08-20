@@ -1,2 +1,2 @@
 # bootstrap-portfolio2108
-Bootstrap 기반 반응형 포트폴리오
+Bootstrap 4 기반 반응형 포트폴리오
