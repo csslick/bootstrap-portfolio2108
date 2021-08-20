@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Homepage</title>
+  <!-- 부트스트랩 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- 내 CSS  -->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- 부트스트랩 JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- 내 자바스크립트 -->
+  <style>
+    p {
+      line-height: 1.8;
+    }
+    section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    section h2 {
+      margin-bottom: 1em;
+    }
+
+    #title {
+      background: #ddd;
+      background-image: url(https://media.istockphoto.com/vectors/blue-geometric-background-graphic-geometric-elegant-blue-background-vector-id1225631955?k=6&m=1225631955&s=612x612&w=0&h=jBCEgPemV2QWVNR-KMGOJF_sD1HZyR4YS-snZ80v9qk=);
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .btn-primary {
+      background-color: #9b59b6;
+      border-color: #9b59b6;
+    }
+
+    .btn-primary:hover {
+      background-color: #9b59b6;
+      border-color: #9b59b6;
+      opacity: 0.8;
+    }
+
+    #title .container{
+      /* outline: 2px solid red; */
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    #skill h4 {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .progress {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 반응형 네비게이션 + 레이아웃 -->
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="./">Hong Gil Dong</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- ml-auto 메뉴 우측으로 정렬 -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <section class="container-fluid" id="title">
+    <div class="container">
+      <h1>홍길동의 포트폴리오</h1>
+      <p>웹디자이너/퍼블리셔</p>
+      <h2>버튼들</h2>
+      <button type="button" class="btn btn-warning">연락주세요</button>
+      <button type="button" class="btn btn-danger">이력서 다운로드</button>
+    </div>
+  </section>
+  
+  <!-- 소개 -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>소개합니다</h2>
+          <p>안녕하세요? 저는 25살 서울에 거주하고 있는 홍길동입니다.<br>
+          앞으로 발전하고 성장하여 실력있는 웹디자이너/퍼블리셔가 될겁니다. 기대해 주세요</p>
+        </div>
+        <div class="col-md-6">
+          <table class="table">
+            <tr>
+              <th>나이:</th>
+              <td>25</td>
+            </tr>
+            <tr>
+              <th>이메일:</th>
+              <td>honggildong@company.com</td>
+            </tr>
+            <tr>
+              <th>전화번호</th>
+              <td>010-123-1234</td>
+            </tr>
+            <tr>
+              <th>주소</th>
+              <td>서울시 도봉구 쌍문동 123</td>
+            </tr>
+            <tr>
+              <th>특기(취미)</th>
+              <td>영어, 운동하기</td>
+            </tr>
+          </table>          
+        </div>
+      </div><!-- end row -->
+    </div>
+  </section>
+  
+  <!-- 직무능력 -->
+  <section id="skill">
+    <div class="container" style="text-align: center;">
+      <h2>직무능력</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <article class="col-md-6">
+          <h4>HTML</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%">70%</div>
+          </div>
+          <h4>JAVASCRIPT</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width:50%">50%</div>
+          </div>
+          <h4>CSS</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%">70%</div>
+          </div>
+        </article>
+        <article class="col-md-6">
+          <h4>PHOTOSHOP</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%">70%</div>
+          </div>
+          <h4>ILLUSTRATOR</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width:50%">50%</div>
+          </div>
+          <h4>ADOBE XD</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%">70%</div>
+          </div>
+        </article>
+      </div><!-- end row -->
+    </div>
+  </section>
+
+  <!-- 칼럼 그리드 -->
+  <section class="container">
+    <!-- 행 -->
+    <div class="row">
+      <!-- md 테블릿부터 칼럼생김(12칼럼 기준) -->
+      <div class="col-md-4">작품 1</div>
+      <div class="col-md-4">작품 2</div>
+      <div class="col-md-4">작품 3</div>
+    </div>
+  </section>
+</body>
+</html>
